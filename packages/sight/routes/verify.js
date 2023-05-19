@@ -4,8 +4,6 @@ const pixelmatch = require('pixelmatch');
 const PNG = require('pngjs').PNG;
 const fs = require('fs');
 
-// odpalam lokalnie z oznaczeniem --update-snapshot, zapisywany jest diff do mastera i potem wystawiany PR i jesli caly czas diff sie zgadza to idziemy dalej
-// jesli uruchomie
 router.get('/:id', function(req, res, next) {
   const img1 = PNG.sync.read(fs.readFileSync(`${req.params.id}.png`));
   const img2 = PNG.sync.read(fs.readFileSync('example2.png'));
