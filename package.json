@@ -13,8 +13,5 @@
   },
   "devDependencies": {
     "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "sight-cli": "^0.0.0"
   }
 }
