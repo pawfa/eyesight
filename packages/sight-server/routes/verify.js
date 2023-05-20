@@ -4,7 +4,7 @@ const pixelmatch = require('pixelmatch');
 const PNG = require('pngjs').PNG;
 const fs = require('fs');
 
-router.get('/:id', function(req, res, next) {
+router.get('/:projectId/:version', function(req, res, next) {
   const img1 = PNG.sync.read(fs.readFileSync(`${req.params.id}.png`));
   const img2 = PNG.sync.read(fs.readFileSync('example2.png'));
   const {width, height} = img1;
