@@ -1,5 +1,5 @@
 {
-  "name": "sight-server",
+  "name": "@eyesight/server",
   "version": "0.0.0",
   "private": true,
   "scripts": {

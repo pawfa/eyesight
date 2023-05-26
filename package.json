@@ -1,17 +1,16 @@
 {
-  "name": "sight",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
     "packages/docs",
-    "packages/sight-server",
-    "packages/sight-cli",
-    "packages/sight-playwright",
-    "packages/sight-ui"
+    "packages/eyesight-server",
+    "packages/eyesight-cli",
+    "packages/eyesight-playwright",
+    "packages/eyesight-ui"
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "start": "node packages/sight-server/bin/www"
+    "start": "node packages/eyesight-server/bin/www"
   },
   "devDependencies": {
     "typescript": "^5.0.4"

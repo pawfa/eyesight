@@ -1,10 +1,10 @@
 {
-  "name": "sight-cli",
+  "name": "@eyesight/cli",
   "version": "0.0.0",
   "description": "",
-  "main": "./dist/bin/sight.js",
+  "main": "./dist/bin/eyesight.js",
   "bin": {
-    "sight": "./dist/bin/sight.js"
+    "eyesight": "./dist/bin/eyesight.js"
   },
   "files": [
     "dist"

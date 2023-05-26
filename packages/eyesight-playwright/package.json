@@ -1,5 +1,5 @@
 {
-  "name": "sight-playwright",
+  "name": "@eyesight/playwright",
   "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
