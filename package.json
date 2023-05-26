@@ -5,7 +5,8 @@
   "workspaces": [
     "packages/docs",
     "packages/sight-server",
-    "packages/sight-cli"
+    "packages/sight-cli",
+    "packages/sight-playwright"
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
