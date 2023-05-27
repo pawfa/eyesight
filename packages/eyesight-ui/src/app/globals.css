@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --page-max-width: 1200px;
+  --page-max-width-with-margin: calc(var(--page-max-width) + calc(2 * var(--page-margin)));
+  --page-margin: 24px
 }
 
 @media (prefers-color-scheme: dark) {

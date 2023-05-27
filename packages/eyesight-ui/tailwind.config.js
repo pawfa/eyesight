@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        'm-desktop': 'var(--page-max-width-with-margin)',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
