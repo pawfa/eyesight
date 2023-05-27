@@ -7,7 +7,7 @@ const path = require("path");
 router.get('/:projectId/:version', async function (req, res, next) {
   const dir = path.join(req.params.projectId, req.params.version)
   if (!fs.existsSync(dir)) {
-    res.send([])
+    return res.send([])
   }
 
   const files = await fs.promises.readdir(dir);

@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "start": "node packages/eyesight-server/bin/www"
+    "start": "node packages/eyesight-server/bin/www",
+    "dev:ui": "npm run dev --workspace @eyesight/ui"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
