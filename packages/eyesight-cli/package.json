@@ -2,18 +2,18 @@
   "name": "@eyesight/cli",
   "version": "0.0.0",
   "description": "",
-  "main": "./dist/bin/eyesight.js",
+  "main": "./lib/bin/eyesight.js",
   "bin": {
-    "eyesight": "./dist/bin/eyesight.js"
+    "eyesight": "./lib/bin/eyesight.js"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc --watch"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "pawfa fajfer.pawel@gmail.com",
+  "license": "MIT"
 }

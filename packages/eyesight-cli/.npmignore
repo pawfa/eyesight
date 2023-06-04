@@ -1,0 +1,8 @@
+# common
+.github/
+.gitignore
+
+# specific
+node_modules
+test
+tsconfig.json
