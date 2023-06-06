@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import cli from "../src/index"
-cli()
+import program from "../src/index"
+program.parse()

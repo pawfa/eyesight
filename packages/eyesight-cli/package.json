@@ -15,5 +15,8 @@
     "dev": "tsc --watch"
   },
   "author": "pawfa fajfer.pawel@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
 }
