@@ -18,14 +18,17 @@ const createCommandWithSharedOptions = ()=>new Command()
 const save = createCommandWithSharedOptions().name('save').action(async function (opts:any) {
     const {path,url,project,version} = opts;
 
-    if (path.endsWith('.png')) {
+    const stats = await fs.promises.lstat(path);
+
+    if (stats.isFile() && path.endsWith('.png')) {
         await handleSingleScreenshot({ url, path, project, version });
-    }
-    else {
+    } else if (stats.isDirectory()) {
         const files = await fs.promises.readdir(path);
         for (const file of files) {
             await handleSingleScreenshot({ url, path: file, project, version });
         }
+    } else {
+        throw new Error('Wrong path')
     }
 })
 
