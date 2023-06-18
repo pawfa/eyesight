@@ -59,7 +59,8 @@ fetch('http://localhost:3001/screenshots/example-project/v3').then((r)=> r.json(
             const fileName = message.split("\\").at(-1)
             orygConsoleLog(`${fileName}`,...args.slice(1))
         }else if(message && message.indexOf("A snapshot doesn't exist") > -1){
-            orygConsoleLog(`Error: A snapshot doesn't exist at eyesight server: version v3, project: example-project, filename: <filename> , writing actual.`)
+            const fileName = message.match(/[^\\]+png/)[0]
+            orygConsoleLog(`Error: A snapshot doesn't exist at eyesight server: version v3, project: example-project, filename: ${fileName} , writing actual.`)
         }else {
             orygConsoleLog(...args)
         }
