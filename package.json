@@ -12,7 +12,8 @@
     "build": "npm run build --workspaces --if-present",
     "start": "node packages/eyesight-server/bin/www",
     "dev:ui": "npm run dev --workspace @eyesight/ui",
-    "docs:start": "npm run start --workspace docs"
+    "docs:start": "npm run start --workspace docs",
+    "docs:build": "npm run build --workspace docs"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
